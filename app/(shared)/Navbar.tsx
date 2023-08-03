@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import React from 'react'
 import SocialLinks from './SocialLinks'
+import add from '../../public/assets/ad-1.jpg'
 
 const navbar = () => {
   return (
@@ -22,8 +23,13 @@ const navbar = () => {
                 <h1 className='font-bold text-3xl md:text-5xl'>BLOG OF THE FUTURE</h1>
                 <p className='text-sm mt-3'>Blog dedicated towards AI and generation and job automation.</p>
             </div>
-            <div className='basis-full w-auto relative h-32 bg-wh-500'>
-                Image is here
+            <div className='basis-full w-auto relative h-32'>
+            <Image
+              className=''
+              alt="instagram"
+              src={add}
+              style={{ width: "900px", height: "120px", objectFit: "cover" }}
+            />
             </div>
         </div>
       <hr className='border-1 mx-10' />
