@@ -11,19 +11,24 @@ import { Post } from "@prisma/client";
 export const revalidate = 60;
 
 const getPosts = async () => {
-  const posts = await prisma.post.findMany();
+  try {
+    const posts = await prisma.post.findMany();
 
-  const formattedPosts = await Promise.all(
-    posts.map(async (post: Post) => {
-      const imageModule = require(`../public${post.image}`);
-      return {
-        ...post,
-        image: imageModule.default,
-      };
-    })
-  );
+    const formattedPosts = await Promise.all(
+      posts.map(async (post: Post) => {
+        const imageModule = require(`../public${post.image}`);
+        return {
+          ...post,
+          image: imageModule.default,
+        };
+      })
+    );
 
-  return formattedPosts;
+    return formattedPosts;
+  } catch (error) {
+    console.error("Error fetching posts:", error);
+    return [];
+  }
 };
 
 export default async function Home() {
@@ -54,7 +59,8 @@ export default async function Home() {
   const [trendingPosts, techPosts, travelPosts, otherPosts] = formatPosts();
 
   return (
-    <main className="px-10 leading-7">
+    
+    <div className="px-10 leading-7">
       <Trending trendingPosts={trendingPosts} />
       {/* <Trending /> */}
       <div className="md:flex gap-10 mb-5">
@@ -73,6 +79,7 @@ export default async function Home() {
           <Sidebar />
         </div>
       </div>
-    </main>
+    </div>
+  
   );
 }
