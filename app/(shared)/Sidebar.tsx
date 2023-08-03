@@ -10,7 +10,7 @@ type Props = {};
 const Sidebar = (props: Props) => {
   return (
     <section>
-      <h4 className="bg-wh-900 py-3 px-5 text-wh-50 text-xs font-bold text-center">
+      <h4 className="bg-teal-600 py-3 px-5 text-wh-50 text-xs font-bold text-center">
         Subscribe and Follow
       </h4>
       <div className="my-5 mx-5">
@@ -25,7 +25,7 @@ const Sidebar = (props: Props) => {
         width={500}
         height={1000}
       />
-      <h4 className="bg-wh-900 py-3 px-5 text-wh-50 text-xs font-bold text-center">
+      <h4 className="bg-teal-600 py-3 px-5 text-wh-50 text-xs font-bold text-center">
         About the Blog
       </h4>
       <div className="flex justify-center my-3">
@@ -36,7 +36,7 @@ const Sidebar = (props: Props) => {
           style={{ width: "500px", height: "250px", objectFit: "cover" }}
         />
       </div>
-      <h4 className="py-3 px-5 text-wh-500 font-bold text-center">
+      <h4 className="py-3 px-5 text-black font-bold text-center">
         Kane Williams
       </h4>
       <p className="text-wh-500 text-center text-sm">
