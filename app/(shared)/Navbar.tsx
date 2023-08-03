@@ -7,7 +7,7 @@ import add from '../../public/assets/ad-1.jpg'
 const navbar = () => {
   return (
     <header className='mb-5'>
-        <nav className='flex justify-between items-center w-full bg-emerald-500 text-wh-10 px-10 py-4'>
+        <nav className='flex justify-between items-center w-full bg-black text-wh-10 px-10 py-4'>
         <div className='hidden sm:block'><SocialLinks/></div>
         <div className='flex justify-between items-center gap-10'>
             <Link href="/" className='hover:scale-110 hover:font-semi-bold'>Home</Link>
