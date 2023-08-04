@@ -118,7 +118,7 @@ const Content = ({ post }: Props) => {
                 value={title}
               />
               {titleError && (
-                <p className="mt-1 text-primary-500">{titleError}</p>
+                <p className="mt-1 text-red-500">{titleError}</p>
               )}
             </div>
           ) : (

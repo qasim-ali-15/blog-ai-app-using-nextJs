@@ -79,7 +79,7 @@ const Article = ({
         )}
         <EditorContent editor={editor} />
       </div>
-      {contentError && <p className="mt-1 text-wh-900">{contentError}</p>}
+      {contentError && <p className="mt-1 text-red-500">{contentError}</p>}
     </article>
   );
 };
