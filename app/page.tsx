@@ -11,9 +11,8 @@ import { Post } from "@prisma/client";
 export const revalidate = 60;
 
 const getPosts = async () => {
+  const posts = await prisma.post.findMany();
   try {
-    const posts = await prisma.post.findMany();
-
     const formattedPosts = await Promise.all(
       posts.map(async (post: Post) => {
         const imageModule = require(`../public${post.image}`);
@@ -30,7 +29,6 @@ const getPosts = async () => {
     return [];
   }
 };
-
 export default async function Home() {
   const posts = await getPosts();
 
@@ -59,16 +57,12 @@ export default async function Home() {
   const [trendingPosts, techPosts, travelPosts, otherPosts] = formatPosts();
 
   return (
-    <div className="px-10 leading-7">
+    <main className="px-10 leading-7">
       <Trending trendingPosts={trendingPosts} />
-      {/* <Trending /> */}
       <div className="md:flex gap-10 mb-5">
         <div className="basis-3/4">
-          {/* <Tech /> */}
           <Tech techPosts={techPosts} />
-          {/* <Travel /> */}
           <Travel travelPosts={travelPosts} />
-          {/* <Other /> */}
           <Other otherPosts={otherPosts} />
           <div className="hidden md:block">
             <Subscribe />
@@ -78,6 +72,6 @@ export default async function Home() {
           <Sidebar />
         </div>
       </div>
-    </div>
+    </main>
   );
 }
