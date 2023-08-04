@@ -6,7 +6,7 @@ type Props = {
   travelPosts: Array<Post>;
 };
 
-const Travel = ({travelPosts}: Props) => {
+const Travel = ({ travelPosts }: Props) => {
   return (
     <section className="mt-10">
       <hr className="border-1" />

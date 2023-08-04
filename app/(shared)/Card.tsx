@@ -6,7 +6,7 @@ import React from "react";
 type Props = {
   className?: string;
   imageHeight: string;
-  post: Post 
+  post: Post;
   isSmallCard?: boolean;
   isLongForm?: boolean;
 };
@@ -30,7 +30,7 @@ const Card = ({
         href={`${process.env.NEXT_PUBLIC_URL}/post/${post?.id}`}
       >
         <div className={`relative w-auto mb-3 ${imageHeight}`}>
-        <Image
+          <Image
             fill
             alt="tech"
             src={image}
@@ -43,9 +43,7 @@ const Card = ({
         </div>
       </Link>
       <div className="basis-full">
-        <Link
-          href={`${process.env.NEXT_PUBLIC_URL}/post/${post?.id}`}
-        >
+        <Link href={`${process.env.NEXT_PUBLIC_URL}/post/${post?.id}`}>
           <h4
             className={`font-bold hover:text-accent-green
             ${isSmallCard ? "text-base" : "text-lg"}
@@ -57,12 +55,8 @@ const Card = ({
         </Link>
 
         <div className={`${isSmallCard ? "my-2" : "flex my-3"} gap-3`}>
-          <h5 className="font-semibold text-xs">
-            {author}
-          </h5>
-          <h6 className="text-wh-300 text-xs">
-            {formattedDate}
-          </h6>
+          <h5 className="font-semibold text-xs">{author}</h5>
+          <h6 className="text-wh-300 text-xs">{formattedDate}</h6>
         </div>
         <p
           className={`text-wh-500 ${

@@ -52,7 +52,7 @@ const Trending = ({ trendingPosts }: Props) => {
         <p className="text-sm">There are some posts in trending. </p>
       </div>
       <div className="sm:grid gap-5 grid-cols-4 grid-rows-2 sm:h-[600px] my-3">
-      <TrendingCard
+        <TrendingCard
           className="col-span-2 row-span-2 bg-wh-500"
           post={trendingPosts[0]}
         />

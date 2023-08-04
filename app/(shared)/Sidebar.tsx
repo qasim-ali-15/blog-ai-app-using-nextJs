@@ -40,7 +40,8 @@ const Sidebar = (props: Props) => {
         Kane Williams
       </h4>
       <p className="text-wh-500 text-center text-sm">
-      Unlocking AI's Potential: Insights, Innovation, and Future Possibilities.
+        Unlocking AI's Potential: Insights, Innovation, and Future
+        Possibilities.
       </p>
     </section>
   );

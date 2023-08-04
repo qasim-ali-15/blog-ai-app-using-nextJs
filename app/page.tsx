@@ -59,7 +59,6 @@ export default async function Home() {
   const [trendingPosts, techPosts, travelPosts, otherPosts] = formatPosts();
 
   return (
-    
     <div className="px-10 leading-7">
       <Trending trendingPosts={trendingPosts} />
       {/* <Trending /> */}
@@ -80,6 +79,5 @@ export default async function Home() {
         </div>
       </div>
     </div>
-  
   );
 }
