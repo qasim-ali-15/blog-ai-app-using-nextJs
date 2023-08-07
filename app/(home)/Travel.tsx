@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "app/(shared)/Card";
-import { Post, PrismaClient } from "@prisma/client";
-const prisma = new PrismaClient();
+import { Post } from "@prisma/client";
 
 type Props = {
   travelPosts: Array<Post>;
