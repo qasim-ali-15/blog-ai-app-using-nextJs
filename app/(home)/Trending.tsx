@@ -1,7 +1,8 @@
-import { Post } from "@prisma/client";
+import { Post, PrismaClient } from "@prisma/client";
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
+const prisma = new PrismaClient();
 
 type TrendingCardProps = {
   className?: string;
