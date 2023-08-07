@@ -70,10 +70,10 @@ const Trending = ({ trendingPosts }: Props) => {
         />
       </div>
       <p className="text-sm">
-        🚀Embrace the Trending Tech Component! 📈 Integrate real-time data,
+        Embrace the Trending Tech Component!🚀 Integrate real-time data📈,
         advanced analytics, and AI capabilities. Stay ahead with cutting-edge
         innovation for elevated software performance. Join the tech revolution
-        now! #TechTrends #Innovation #AI
+        now! <b> #TechTrends #Innovation #AI </b>
       </p>
     </div>
   );

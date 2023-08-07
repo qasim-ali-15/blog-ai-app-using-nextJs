@@ -64,7 +64,7 @@ const Article = ({
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
-                className="w-6 h-6 text-accent-orange hover:text-wh-300"
+                className="w-8 h-8 text-accent-orange hover:text-wh-300"
               >
                 <path
                   fillRule="evenodd"
