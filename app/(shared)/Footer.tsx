@@ -29,7 +29,7 @@ const Footer = ({ isDark = false }: Props) => {
             href="https://twitter.com"
             target="_blank"
             rel="noreferrer"
-            className="flex hover:font-bold my-5"
+            className="flex hover:font-semibold my-5"
           >
             <Image
               className={`${isDark ? "brightness-0" : ""} hover:opacity-50`}
@@ -45,7 +45,7 @@ const Footer = ({ isDark = false }: Props) => {
             href="https://facebook.com"
             target="_blank"
             rel="noreferrer"
-            className="flex hover:font-bold my-5"
+            className="flex hover:font-semibold my-5"
           >
             <Image
               className={`${isDark ? "brightness-0" : ""} hover:opacity-50`}
@@ -60,7 +60,7 @@ const Footer = ({ isDark = false }: Props) => {
             href="https://instagram.com"
             target="_blank"
             rel="noreferrer"
-            className="flex hover:font-bold my-5"
+            className="flex hover:font-semibold my-5"
           >
             <Image
               className={`${isDark ? "brightness-0" : ""} hover:opacity-50`}
@@ -91,7 +91,7 @@ const Footer = ({ isDark = false }: Props) => {
               />
             </svg>
 
-            <div className="inline-flex mx-2">abcdef@gmail.com</div>
+            <div className="inline-flex mx-2">aiblogapp@gmail.com</div>
           </div>
           <div className="flex my-5">
             <svg
@@ -109,7 +109,7 @@ const Footer = ({ isDark = false }: Props) => {
               />
             </svg>
 
-            <div className="inline-flex mx-2">(333)444-5555</div>
+            <div className="inline-flex mx-2">(333) 444-5555</div>
           </div>
         </div>
       </div>
