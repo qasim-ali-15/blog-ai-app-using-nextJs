@@ -19,9 +19,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <body>
       <Navbar />
-      <div className={openSans.className}>{children}</div>
-      <Footer />
+        <div className={openSans.className}>{children}</div>
+        <Footer />
+      </body>
     </html>
   );
 }

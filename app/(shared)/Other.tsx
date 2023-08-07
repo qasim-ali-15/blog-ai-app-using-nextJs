@@ -8,7 +8,7 @@ type Props = {
 
 const Other = ({ otherPosts }: Props) => {
   return (
-    <section className="pt-4 mb-16">
+    <div className="pt-4 mb-16">
       <hr className="border-1" />
       {/* HEADER */}
       <p className="font-bold text-2xl my-8">Other Trending Posts</p>
@@ -34,7 +34,7 @@ const Other = ({ otherPosts }: Props) => {
           post={otherPosts[3]}
         />
       </div>
-    </section>
+    </div>
   );
 };
 

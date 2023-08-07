@@ -9,7 +9,7 @@ type Props = {};
 
 const Sidebar = (props: Props) => {
   return (
-    <section>
+    <div>
       <h4 className="bg-black py-3 px-5 text-wh-50 text-xs font-bold text-center">
         Subscribe and Follow
       </h4>
@@ -43,7 +43,7 @@ const Sidebar = (props: Props) => {
         Unlocking AI's Potential: Insights, Innovation, and Future
         Possibilities.
       </p>
-    </section>
+    </div>
   );
 };
 

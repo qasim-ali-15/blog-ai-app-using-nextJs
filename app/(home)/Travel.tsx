@@ -8,7 +8,7 @@ type Props = {
 
 const Travel = ({ travelPosts }: Props) => {
   return (
-    <section className="mt-10">
+    <div className="mt-10">
       <hr className="border-1" />
       {/* HEADER */}
       <div className="flex items-center gap-3 my-8">
@@ -41,7 +41,7 @@ const Travel = ({ travelPosts }: Props) => {
         imageHeight="h-80"
         post={travelPosts[3]}
       />
-    </section>
+    </div>
   );
 };
 

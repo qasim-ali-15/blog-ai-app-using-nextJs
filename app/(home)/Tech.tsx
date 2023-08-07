@@ -8,7 +8,7 @@ type Props = {
 
 const Tech = ({ techPosts }: Props) => {
   return (
-    <section>
+    <div>
       <hr className="border-1" />
       {/* HEADER */}
       <div className="flex items-center gap-3 my-8">
@@ -44,7 +44,7 @@ const Tech = ({ techPosts }: Props) => {
           isSmallCard
         />
       </div>
-    </section>
+    </div>
   );
 };
 

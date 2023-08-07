@@ -15,12 +15,12 @@ const Footer = ({ isDark = false }: Props) => {
         {/* FIRST COLUMN */}
         <div className="mt-16 basis-1/2 sm:mt-0">
           <h4 className="font-bold">BLOG OF THE FUTURE</h4>
-          <p className="my-5">
+          <div className="my-5">
             The "Blog of the Future" is a revolutionary concept that envisions
             the evolution of traditional blogs into interactive, immersive, and
             personalized platforms.
-          </p>
-          <p>© Blog of the Future All Rights Reserved.</p>
+          </div>
+          <div>© Blog of the Future All Rights Reserved.</div>
         </div>
         {/* SECOND COLUMN */}
         <div className="mt-16 basis-1/4 sm:mt-0">
@@ -39,7 +39,7 @@ const Footer = ({ isDark = false }: Props) => {
               height={20}
             />
 
-            <p className="mx-2">Visit to Twitter page</p>
+            <div className="mx-2">Visit to Twitter page</div>
           </a>
           <a
             href="https://facebook.com"
@@ -54,7 +54,7 @@ const Footer = ({ isDark = false }: Props) => {
               width={20}
               height={20}
             />
-            <p className="mx-2">Visit to Facebook page</p>
+            <div className="mx-2">Visit to Facebook page</div>
           </a>
           <a
             href="https://instagram.com"
@@ -69,7 +69,7 @@ const Footer = ({ isDark = false }: Props) => {
               width={20}
               height={20}
             />
-            <p className="mx-2">Visit to Instagram page</p>
+            <div className="mx-2">Visit to Instagram page</div>
           </a>
         </div>
         {/* THIRD COLUMN */}
@@ -91,7 +91,7 @@ const Footer = ({ isDark = false }: Props) => {
               />
             </svg>
 
-            <p className="inline-flex mx-2">abcdef@gmail.com</p>
+            <div className="inline-flex mx-2">abcdef@gmail.com</div>
           </div>
           <div className="flex my-5">
             <svg
@@ -109,7 +109,7 @@ const Footer = ({ isDark = false }: Props) => {
               />
             </svg>
 
-            <p className="inline-flex mx-2">(333)444-5555</p>
+            <div className="inline-flex mx-2">(333)444-5555</div>
           </div>
         </div>
       </div>
