@@ -57,7 +57,7 @@ export default async function Home() {
   const [trendingPosts, techPosts, travelPosts, otherPosts] = formatPosts();
 
   return (
-    <main className="px-10 leading-7">
+    <div className="px-10 leading-7">
       <Trending trendingPosts={trendingPosts} />
       <div className="md:flex gap-10 mb-5">
         <div className="basis-3/4">
@@ -72,6 +72,6 @@ export default async function Home() {
           <Sidebar />
         </div>
       </div>
-    </main>
+    </div>
   );
 }

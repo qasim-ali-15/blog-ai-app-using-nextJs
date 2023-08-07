@@ -39,7 +39,7 @@ const Post = async ({ params }: Props) => {
   }
 
   return (
-    <main className="px-10 leading-7">
+    <div className="px-10 leading-7">
       <div className="md:flex gap-10 mb-5">
         <div className="basis-3/4">
           <Content post={post} />
@@ -48,7 +48,7 @@ const Post = async ({ params }: Props) => {
           <Sidebar />
         </div>
       </div>
-    </main>
+    </div>
   );
 };
 
