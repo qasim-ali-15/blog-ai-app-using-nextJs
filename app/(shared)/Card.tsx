@@ -45,7 +45,7 @@ const Card = ({
       <div className="basis-full">
         <Link href={`${process.env.NEXT_PUBLIC_URL}/post/${post?.id}`}>
           <h4
-            className={`font-bold hover:text-accent-green
+            className={`font-bold hover:text-gray-600
             ${isSmallCard ? "text-base" : "text-lg"}
             ${isSmallCard ? "line-clamp-2" : ""}
           `}
